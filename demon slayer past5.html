@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="jquery.min.js"></script>
+        <meta charset="utf-8" />
+         <title>鬼滅の刃介绍</title>
+         <link href="D:\xuexi\web-projects\test-site\styles\demon slayer past5.css" rel="stylesheet" />
+         </head>
+        <body>
+            <h1><em>鬼滅の刃</em></h1>
+        <ol id="k1">
+           <li><a href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past1.html" >首页</a></li>
+          <li><a href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past2.html" >经典人物</a></li>
+          <li><a href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past3.html" >对立组织</a></li>
+         <li><a href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past4.html" >用户注册</a></li>
+        <li><a  href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past5.html" >评论专区</a></li>
+         </ol>
+    <img id="k2" src="C:/Users/lenovo/Pictures/鬼灭/屏幕截图 2023-07-27 220813.png" 
+    width="1300"height="700"
+    alt="My test image" />
+    <div style="border-bottom:1px solid #1d1b1b"></div><!--设置一条分割线-->
+    <h2>用户评论：</h2>
+    <div class="t1">
+        <fieldset><!--创建方框-->
+        <p>
+        <label  for="username">用户名:</label>
+        <input id="wenben1" type="text" name="username" ></input>
+        </p>
+
+        <p><label  for="password">密码:</label>
+        <input id="wenben2" type="number" name="password" ></input>
+        </p>
+
+        <div id="wenben3" style="display: inline;">请输入你的评论内容：</div>
+        <p><textarea id="mysontext"cols="50"rows="10"></textarea></p>
+        <button id="wenebn4">发布</button>
+        <div class="t4">
+        <fieldset>
+            <legend>请选择你喜欢的人物：</legend>
+            <select id="mySelect">
+                <option value="您温柔且善良，性格憨厚，是一个无论是遭到了怎样的打击都不会输，拼命地努力下去的人"> 灶门炭治郎</option>
+                <option value="您胆小却直率，心地善良，即便害怕也会为朋友和女孩子挺身而出，是一个追随自己内心活着的人">我妻善逸</option>
+                <option value="您通常是有话直说直接开打型，虽然有着不服输的性格，但是意外地很玻璃心">嘴平伊之助</option>
+                <option value="您活泼开朗，有着像火般的热情，拥有坚定的意志力和立场，更是有着无与伦比的责任心">炼狱杏寿郎</option>
+                <option value="您看起来较为冷漠，平时表现的也对他人漠不关心，但却有着一颗善良温柔的心">时透无一郎</option>
+                <option value="您性格温和但生气起来却很恐怖的类型，你性格坚强，懂得为他人分担">灶门祢豆子</option>
+              </select>
+              <p><textarea id="myInput"cols="55"rows="17"></textarea></p>
+              <script>
+              document.getElementById("mySelect").onchange = function() {
+                //使用document.getElementById()方法获取到文本框的元素,给下拉列表元素绑定一个onchange事件，当选择内容发生改变时触发
+                var selectElement = document.getElementById("mySelect");
+                //把获取到的元素赋值给Selectelement
+                var inputElement = document.getElementById("myInput");
+                //把input文本框的值赋给inputelement
+                var selectedIndex = selectElement.selectedIndex;
+                //使用selectedIndex属性获取当前选择的选项的索引，再把这些值存储到selectindex
+                var selectedValue = selectElement.options[selectedIndex].value;
+                //根据选项的索引，使用options属性获取到对应的选项元素，再通过value属性获取到对应的值后赋给selectvalue
+                inputElement.value = selectedValue;
+                //赋值
+              };
+              </Script>
+        </fieldset>
+        </div>
+        <ul></ul>
+    </fieldset>
+        </div>
+        <h3>评论展示：</h3>
+        <div class="t2">
+             <fieldset></fieldset>
+            </div>
+            <img class="box1" src="C:/Users/lenovo/Pictures/鬼灭/图层 4.png">
+<script src="D:\xuexi\web-projects\test-site\scripts\demon slayer past5.js"></script>
+     <div id="foot">
+     <P>Copyight@鬼滅の刃</P>
+     <p>感谢您的阅览.</p>
+     </div>
+        </body>
+        </html>

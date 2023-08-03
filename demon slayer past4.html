@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+         <title>鬼滅の刃介绍</title>
+         <link href="D:\xuexi\web-projects\test-site\styles\demon slayer past4.css" rel="stylesheet" />
+         </head>
+        <body>
+            <h1><em>鬼滅の刃</em></h1>
+        <ul id="k1">
+            <li><a href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past1.html" >首页</a></li>
+          <li><a href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past2.html" >经典人物</a></li>
+          <li><a href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past3.html" >对立组织</a></li>
+         <li><a href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past4.html" >用户注册</a></li>
+           <li><a  href="file:///D:/xuexi/web-projects/test-site/demon%20slayer%20past5.html" >评论专区</a></li>
+         </ul>
+    <img id="k2" src="C:/Users/lenovo/Pictures/鬼灭/屏幕截图 2023-07-27 220813.png" 
+    width="1300"height="700"
+    alt="My test image" />
+    <div style="border-bottom:1px solid #1d1b1b"></div><!--设置一条分割线-->
+    <div class="demo">
+ <div class="div" style="font-size: 20px;color:red;">请注册个人信息:</div>
+
+<p>*</p>
+<div class="div">
+    性别：<input name="sex" type="radio" value="男" checked/>男 
+    <input name="sex" type="radio" value="女"/>女
+    </div>
+    <p>*</p>
+    <div class="div">
+    出生日期：<select id="year">
+             <script type="text/javascript">
+            for(var i=2000;i<=2022;i++){
+            document.write("<option value="+i+">"+i+"</option>");}
+            </script></select>年
+            <select id="month">
+            <script type="text/javascript">
+            for(var i=1;i<=12;i++){
+            document.write("<option value="+i+">"+i+"</option>");}
+            </script></select>月
+            <select id="day">
+                <script type="text/javascript">
+            for(var i=1;i<=31;i++){
+            document.write("<option value="+i+">"+i+"</option>");}
+            </script></select>日
+    </div>
+                <p>*</p>
+                <div class="div">
+                姓名：<input id="Na" type="text" class="inputs" onchange="Name()"/>
+                <!--onchange是一个触发事件，可以借助JS的设定做出需要的反应-->
+                </div>
+                <p>*</p>
+                <div class="div">
+                注册用户名：<input id="user" type="text"  class="inputs" onchange="checkUser()"/>
+                </div>
+                <p>*</p><div class="div">
+                请输入密码：<input id="pwd" type="password"  class="inputs" onchange="checkPwd()"/>
+                <div id="pwdId" class="red" style="color: red;"></div>
+                </div>
+                <p>*</p><div class="div">
+                请确认密码：<input id="repwd" type="password"  class="inputs" onchange="checkRepwd()"/>
+                <div id="repwdId" class="red" style="color: red;"></div>
+                </div>
+                <p>*</p><div class="div">
+                输入电子邮箱：<input id="email" type="text"  class="inputs" onchange="checkEmail()"/>
+                <div id="emailId" class="red" style="color: red;"></div><!--可有可无-->
+                </div>
+                <p>*</p>
+                <div class="div">
+                输入电话号码：<input id="user" type="text"  class="inputs" onchange="checkUser()"/>
+                </div>
+                <div class="div">
+                <input id="aaa" name="sub" type="submit" value="注册"/>
+                <input name="cancel" type="reset" value="清除"/>
+                </div>
+                <img class="box1" src="C:/Users/lenovo/Pictures/鬼灭/图层 2.png">
+                <img class="box2" src="C:/Users/lenovo/Pictures/鬼灭/图层 3.png">
+            </div>
+            <script src="D:\xuexi\web-projects\test-site\scripts\demon slayer past4.js"></script>
+        </body>
+        <div id="foot">
+            <div>Copyight@鬼滅の刃</div>
+            <div>感谢您的阅览.</div>
+        </div>
+    </html>
+  
